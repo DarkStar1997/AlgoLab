@@ -28,7 +28,7 @@ void sort(std::vector<T> &arr, int low, int high, Comp cmp)
 int main()
 {
     std::vector<int> arr = {std::istream_iterator<int>(std::cin), std::istream_iterator<int>()};
-    sort<int>(arr, 0, arr.size() - 1, [](int x, int y){return x>y;});
+    sort<int>(arr, 0, arr.size() - 1, [](int x, int y){return x<y;});
     std::cout<<"Sorted array:\n";
     std::for_each(arr.begin(), arr.end(), [](const int &x){std::cout<< x << '\n';});
 }
