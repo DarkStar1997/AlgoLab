@@ -12,7 +12,7 @@ void merge(std::vector<T> &arr, int low, int high, Comp cmp)
     std::vector<T> right(arr.begin() + mid + 1, arr.begin() + high + 1);
     auto [i, j, k] = std::make_tuple(0, 0, low);
     while(i < len1 && j < len2)
-        if(left[i] <= right[j])
+        if(cmp(left[i], right[j]))
             arr[k++] = left[i++];
         else
             arr[k++] = right[j++];
