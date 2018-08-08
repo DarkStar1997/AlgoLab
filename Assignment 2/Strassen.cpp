@@ -45,12 +45,12 @@ struct Mat
         Mat<T> ans4(n/2, n/2);
         
         for(int i = 0; i < n/2; i++)
-		    for(int j = 0; j < n/2; j++)
-			    ans1.data[i][j] = mat.data[i][j];
+            for(int j = 0; j < n/2; j++)
+                ans1.data[i][j] = mat.data[i][j];
 
         for(int i = 0, x = 0; i < n/2; i++, x++)
-		    for(int j = n/2, y = 0; j < n; j++, y++)
-			    ans2.data[x][y] = mat.data[i][j];
+            for(int j = n/2, y = 0; j < n; j++, y++)
+                ans2.data[x][y] = mat.data[i][j];
 
         for(int i = n/2, x = 0; i < n; i++, x++)
             for(int j = 0, y = 0; j < n/2; j++, y++)
@@ -137,13 +137,13 @@ int main()
         for(auto& j : i)
             std::cin>>j;
     std::cout<<"The resultant matrix:\n";
-	auto res = mtx1 * mtx2;
-	for(auto& i : res.data)
-	{
-		for(auto& j : i)
-			std::cout<<j<<", ";
-		std::cout<<"\n";
-	}
-	std::cout<<std::endl;
-	return 0;
+    auto res = mtx1 * mtx2;
+    for(auto& i : res.data)
+    {
+        for(auto& j : i)
+            std::cout<<j<<", ";
+        std::cout<<"\n";
+    }
+    std::cout<<std::endl;
+    return 0;
 }
