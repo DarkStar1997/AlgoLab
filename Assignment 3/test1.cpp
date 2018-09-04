@@ -29,9 +29,6 @@ void calc(const std::string &pat, int M, std::vector<int> &lps)
             }
         }
     }
-    std::cout<<"LPS:\n";
-    for(const auto& i : lps)
-    	std::cout<<i<<'\n';
 }
 void search(const std::string &pat, const std::string &txt)
 {

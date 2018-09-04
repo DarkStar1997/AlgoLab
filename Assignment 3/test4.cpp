@@ -29,7 +29,6 @@ int main()
 			inf += j;
 		}
 	std::cout<<"Enter the position\n";
-	std::cout<<inf<<'\n';
 	int x, y; std::cin>>x>>y;
 	std::cout<<find(arr, x-1, y-1)<<'\n';
 }

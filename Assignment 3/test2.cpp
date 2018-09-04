@@ -24,5 +24,5 @@ int main()
 		else
 			ans[i] = x;
 	}
-	std::cout<<ans[val+1]<<'\n';
+	std::cout<<ans[val]<<'\n';
 }
